@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 4 – Criação de formulário</title>
+    <meta name="description" content="Formulário">
+    <meta name="author" content="Thiago Guimarães">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <hr>
+    <form>
+        Nome <input type="text" name="Nome" id="Nome"><br>
+        Introduza a sua password <input type="password" name="palavra-passe" id="pass"><br>
+        Data de Nascimento <input type="date" name="data de nascimento" id="date"><br>
+        Telefone <input type="tel" name="telefone" id="phone"       placeholder="123-456-789" pattern="[0-9][0-9][0-9]-[[0-9][0-9][0-
+        9]-[0-9][0-9][0-9]"><br>
+        E-mail <input type="email" name="e-mail" id="e-mail"><br><br>
+        Género <br>
+        <input type="radio" name="gender" id="male">Masculino<br>
+        <input type="radio" name="gender" id="female">Feminino<br><br>
+        Nacionalidade <br>
+        <select name="select">
+            <option value="nacionalidade">Portuguesa</option>
+            <option value="nacionalidade">Brasileira</option>
+        </select> <br><br>
+        Escolheu esse curso por motivos profissionais? <br>
+        <input type="checkbox" name="sim" id="box" value="sim">Sim <br>
+        <input type="checkbox" name="não" id="box" value="não">Não<br><br>Descreva as suas motivações para frequentar este curso. <br>
+        <textarea cols="50" rows="20" name="descrição"></textarea><br><br>
+            Numa escala de 1 a 5 como avalia este curso? <br>
+        <input type="range" name="range" id="range" min="0" max="5"><br>
+        <hr>
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Apagar Formulário</button>
+    </form>
+</body>
+</html>
